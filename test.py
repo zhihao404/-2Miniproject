@@ -59,6 +59,14 @@ class Game:
             Animal(0, 16, 0, 16, 16),
             Animal(0, 32, 0, 16, 16),
             Animal(0, 48, 0, 16, 16),
+            Animal(0, 0, 0, 16, 16),
+            Animal(0, 16, 0, 16, 16),
+            Animal(0, 32, 0, 16, 16),
+            Animal(0, 48, 0, 16, 16),
+            Animal(0, 0, 0, 16, 16),
+            Animal(0, 16, 0, 16, 16),
+            Animal(0, 32, 0, 16, 16),
+            Animal(0, 48, 0, 16, 16),
         ]
         self.start_time = time.time()
         self.score = 0
@@ -85,9 +93,8 @@ class Game:
                             self.score += 1
                             animal.restart()
         else:
-            if 60 <= pyxel.mouse_x <= 130 and 100 <= pyxel.mouse_y <= 110:
-               if pyxel.btnp(pyxel.MOUSE_BUTTON_LEFT):
-                    self.restart()
+            if pyxel.btnp(pyxel.MOUSE_BUTTON_LEFT):
+                self.restart()
 
     def draw(self):
         pyxel.cls(0)
