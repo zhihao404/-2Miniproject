@@ -59,6 +59,14 @@ class Game:
             Animal(0, 16, 0, 16, 16),
             Animal(0, 32, 0, 16, 16),
             Animal(0, 48, 0, 16, 16),
+            Animal(0, 0, 0, 16, 16),
+            Animal(0, 16, 0, 16, 16),
+            Animal(0, 32, 0, 16, 16),
+            Animal(0, 48, 0, 16, 16),
+            Animal(0, 0, 0, 16, 16),
+            Animal(0, 16, 0, 16, 16),
+            Animal(0, 32, 0, 16, 16),
+            Animal(0, 48, 0, 16, 16),
         ]
         self.start_time = time.time()
         self.score = 0
